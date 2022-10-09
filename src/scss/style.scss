@@ -1,15 +1,12 @@
 @use "sass:math";
 
+
+
 @import 'config/fonts';
 @import 'config/vars';
 @import 'config/scrollbar';
 @import 'config/global';
 @import 'config/reset';
-
-@import 'layout/header';
-@import 'layout/footer';
-
-@import "layout/home";
 
 // Подключение миксинов ===========================================================================================================================================================================================================================================================================
 @import 'config/mixins';
@@ -46,7 +43,7 @@ $maxWidth: 1600;
 $maxWidthContainer: 1160;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 0;
+$containerPadding: 30;
 
 // Ширина срабатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -141,6 +138,10 @@ body {
 	}
 }
 
+@import 'layout/header';
+@import 'layout/footer';
+
+@import "layout/home";
 
 
 
