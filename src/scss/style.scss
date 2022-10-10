@@ -1,7 +1,5 @@
 @use "sass:math";
 
-
-
 @import 'config/fonts';
 @import 'config/vars';
 @import 'config/scrollbar';
@@ -43,7 +41,7 @@ $maxWidth: 1600;
 $maxWidthContainer: 1160;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 30;
+$containerPadding: 60;
 
 // Ширина срабатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -78,10 +76,6 @@ body {
 
 // Оболочка wrapper ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
 	// Прижимаем footer
 	> main {
 		flex: 1 1 auto;
@@ -90,6 +84,18 @@ body {
 	> * {
 		min-width: 0;
 	}
+	
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
 }
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
