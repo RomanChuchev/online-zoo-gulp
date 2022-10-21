@@ -145,8 +145,9 @@
                 &:nth-child(1) {
                     top: 50%;
                     transform: translateX(-50%) translateY(0) rotate(45deg);
-                    transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87),
-                        transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s;
+                    transition: top 0.3s 3s cubic-bezier(0.21, 0.83, 0.26, 0.87),
+                        transform 0.3s 3s cubic-bezier(0.21, 0.83, 0.26, 0.87)
+                            0.3s 3s;
                 }
                 &:nth-child(2) {
                     opacity: 0;
@@ -154,8 +155,10 @@
                 &:last-child {
                     top: 50%;
                     transform: translateX(-50%) translateY(0) rotate(-45deg);
-                    transition: bottom 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87),
-                        transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s;
+                    transition: bottom 0.3s 3s
+                            cubic-bezier(0.21, 0.83, 0.26, 0.87),
+                        transform 0.3s 3s cubic-bezier(0.21, 0.83, 0.26, 0.87)
+                            0.3s 3s;
                 }
             }
         }
