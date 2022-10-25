@@ -1,0 +1,37 @@
+.container {
+    max-width: 1190px;
+    padding: 0 15px;
+}
+
+.btn {
+}
+
+.section-animal {
+    background-image: url(../../images/animal/bg.jpg);
+    background-image: -webkit-image-set(
+        url(../../images/animal/bg.webp) type("image/webp"),
+        url(../../images/animal/bg.jpg) type("image/jpeg")
+    );
+    background-image: image-set(
+        url(../../images/animal/bg.webp) type("image/webp"),
+        url(../../images/animal/bg.jpg) type("image/jpeg")
+    );
+    background-position: 0 -14vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 43.75vw;
+    &__container {
+    }
+
+    &__content {
+    }
+
+    &__title {
+    }
+
+    &__elipse {
+    }
+
+    &__btn {
+    }
+}
