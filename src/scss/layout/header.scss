@@ -1,3 +1,8 @@
+.container {
+    max-width: 1190px;
+    padding: 0 15px;
+}
+
 .header {
     background-color: $blackColor;
     color: #fff;
@@ -35,6 +40,8 @@
         width: 12px;
         height: 20.98px;
         -webkit-mask-image: url(../images/icons/bamboo.svg);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
         background-color: $whiteColor;
     }
 }
@@ -55,7 +62,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        @include adaptiveValue("column-gap", 58, 20);
+        @include adaptiveValue("column-gap", 60, 20);
         row-gap: 5px;
     }
 
