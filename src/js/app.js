@@ -6,8 +6,8 @@ import "./modules/dynamic_adapt.js";
 flsFunctions.isWebp();
 
 document
-    .querySelector(".header__burger")
+    .querySelector(".burger-wrapper")
     .addEventListener("click", function () {
-        this.classList.toggle("open");
+        document.querySelector(".header__burger").classList.toggle("open");
         document.querySelector(".header__menu").classList.toggle("open");
     });

@@ -1,13 +1,8 @@
-.container {
-    max-width: 1190px;
-    padding: 0 15px;
-}
-
 .header {
     background-color: $blackColor;
     color: #fff;
     padding: 10px 0;
-
+    z-index: 20;
     &__container {
         display: flex;
         align-items: center;
@@ -18,42 +13,18 @@
         flex: 1 1 auto;
     }
 
-    //  &__link_copyright {
-    //  }
-}
+    @media (max-width: $mobile) {
+        padding: 5px 0 1px;
 
-.logo-wrapper {
-    border: 1px solid #ffffff;
-    border-radius: 2px;
-    width: 82px;
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        bottom: 7px;
-        left: 9px;
-        width: 12px;
-        height: 20.98px;
-        -webkit-mask-image: url(../images/icons/bamboo.svg);
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-size: contain;
-        background-color: $whiteColor;
+        &__container {
+            min-height: 24px;
+        }
     }
 }
 
-.logo-wrapper_visibility {
-    display: none;
-}
-
 .logo {
+    text-align: center;
     font-weight: 400;
-    font-size: 19.0145px;
-    line-height: 22.82px;
     color: $whiteColor;
 }
 
@@ -76,11 +47,55 @@
         line-height: math.div(22.4, 18.4);
     }
     &__logo {
+        font-size: 19.0145px;
+        line-height: 22.82px;
+
         margin-right: 4px;
+        border: 1px solid #ffffff;
+        border-radius: 2px;
+        width: 82px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 7px;
+            left: 9px;
+            width: 12px;
+            height: 20.98px;
+            -webkit-mask-image: url(../images/icons/bamboo.svg);
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: contain;
+            background-color: $whiteColor;
+        }
+        &_visibility {
+            display: none;
+        }
     }
 
     &__link_active {
         color: $orangeColor;
+    }
+
+    @media (max-width: $mobile) {
+        &__logo {
+            border: none;
+            font-size: 12.29px;
+            width: 47px;
+            height: 29px;
+            line-height: 15px;
+            &::before {
+                bottom: 3px;
+                left: 4px;
+                height: 13.56px;
+                width: 7px;
+            }
+        }
     }
 }
 
@@ -97,33 +112,33 @@
 
 // Burger
 
-// @media (max-width: $mobile) {
-// 	.menu__link {
-// 		display: none;
-// 	}
-// }
-
 .header-burger {
     display: none;
 }
 
 @media (max-width: $mobile) {
+    .burger-wrapper {
+        width: 30px;
+        height: 30px;
+    }
     .header-burger {
         display: block;
         position: absolute;
-        right: 20px;
-        width: rem(28);
-        height: rem(18);
+        right: 10px;
+        top: 2px;
+        width: 18px;
+        height: 10px;
         background: none;
         box-shadow: none;
         border: none;
         outline: 0;
         z-index: 10;
+        margin: 10px;
 
         span {
             position: absolute;
             left: 50%;
-            width: 26px;
+            width: 18px;
             height: 2px;
             background-color: #fff;
             &:nth-child(1) {
@@ -133,12 +148,12 @@
                     transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
             }
             &:nth-child(2) {
-                top: 8px;
+                top: 4px;
                 opacity: 1;
                 transform: translateX(-50%);
             }
             &:last-child {
-                top: 16px;
+                top: 8px;
                 transform: translateX(-50%) translateY(0);
                 transition: top 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87) 0.3s,
                     transform 0.3s cubic-bezier(0.21, 0.83, 0.26, 0.87);
@@ -170,7 +185,7 @@
             }
         }
     }
-    .logo-wrapper_visibility {
+    .menu__logo_visibility {
         display: flex;
 
         &::before {
