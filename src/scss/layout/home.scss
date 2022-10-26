@@ -109,8 +109,12 @@
             padding-top: clamp(20px, 4.2vw, 44.2px);
         }
         &__title {
+            font-size: clamp(54px, 8.5vw, 85px);
+            line-height: clamp(41px, 6.4vw, 64px);
             ::before {
                 left: -63px;
+                height: clamp(237px, 36vw, 367px);
+                width: clamp(237px, 36vw, 367px);
             }
         }
     }
@@ -123,11 +127,9 @@
         &__content {
             max-width: none;
             gap: 0;
-            margin: 0;
+            margin-right: 2px;
             display: flex;
-
             padding-top: clamp(20px, 8vw, 48px);
-            // padding-top: 50px;
         }
         &__title {
             align-self: flex-end;
@@ -140,8 +142,40 @@
             }
         }
         &__btn {
-            margin-top: -10px;
+            margin-top: -9px;
             align-self: flex-start;
+            width: clamp(100px, 46.5vw, 298px);
+        }
+    }
+    @media (max-width: $mobileSmall) {
+        max-height: 221px;
+        padding-top: 0;
+        margin-top: 0;
+        position: relative;
+
+        &__container {
+            margin-bottom: 110px;
+        }
+        &__content {
+            padding-top: 40px;
+            margin-right: 1px;
+        }
+        &__title {
+            align-self: flex-end;
+            font-size: clamp(28px, 8.75vw, 54px);
+            line-height: clamp(21px, 6.5vw, 41px);
+            ::before {
+                left: -19px;
+                bottom: 5px;
+                height: clamp(119px, 37vw, 237px);
+                width: clamp(119px, 37vw, 237px);
+            }
+        }
+        &__btn {
+            position: absolute;
+            align-self: center;
+            bottom: -75px;
+            width: 298px;
         }
     }
 }

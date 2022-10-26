@@ -67,6 +67,7 @@ $responsiveType: 2;
 body {
     font-weight: 400;
     font-style: normal;
+    min-width: 320px;
 
     // Скролл заблокирован
     .lock & {
