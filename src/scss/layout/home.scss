@@ -21,7 +21,9 @@
     -ms-flex-pack: center;
 }
 
-.section-animal {
+// Section Animal
+
+.animal {
     background-color: #283035;
     background-image: url(../../images/animal/bg.jpg);
     background-image: -webkit-image-set(
@@ -40,6 +42,7 @@
 
     &__container {
         @include adaptiveValue("padding-bottom", 100, 10);
+        margin-bottom: clamp(100px, 8.75vw, 140px);
     }
 
     &__content {
@@ -102,6 +105,7 @@
     @media (max-width: $tablet) {
         &__container {
             padding-bottom: 50px;
+            margin-bottom: clamp(60px, 10vw, 100px);
         }
         &__content {
             gap: clamp(20px, 4vw, 40.2px);
@@ -123,6 +127,7 @@
         margin-top: -34px;
         &__container {
             padding-bottom: 40px;
+            margin-bottom: clamp(100px, 9.375vw, 60px);
         }
         &__content {
             max-width: none;
@@ -154,7 +159,7 @@
         position: relative;
 
         &__container {
-            margin-bottom: 110px;
+            margin-bottom: 100px;
         }
         &__content {
             padding-top: 40px;
@@ -177,5 +182,24 @@
             bottom: -75px;
             width: 298px;
         }
+    }
+}
+
+// Section Backstage
+
+.backstage {
+    &__container {
+    }
+    &__content {
+    }
+    &__image {
+    }
+    &__description {
+    }
+    &__title {
+    }
+    &__text {
+    }
+    &__subtitle {
     }
 }
