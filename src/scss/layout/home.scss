@@ -315,3 +315,114 @@
         }
     }
 }
+
+// Pets
+
+// .pets {
+//     &__container {
+//     }
+//     &__content {
+//     }
+//     &__slider {
+//     }
+//     &__slider-field {
+//     }
+//     &__strip {
+//     }
+//     &__list {
+//     }
+//     &__item {
+//     }
+//     &__figure {
+//     }
+//     &__picture {
+//     }
+//     &__image {
+//     }
+//     &__info {
+//     }
+//     &__title {
+//     }
+//     &__native {
+//     }
+//     &__btn {
+//     }
+//     &__btn_right {
+//     }
+//     &__btn_left {
+//     }
+// }
+// .container {
+// }
+// .truncate {
+// }
+// .btn-link {
+// }
+
+// Feed
+.feed {
+    padding: 69px 0 100px;
+    background: linear-gradient(
+            315.75deg,
+            rgba(254, 210, 144, 0.7) 30.06%,
+            #febdab 100.95%,
+            rgba(254, 210, 144, 0.7) 106.36%
+        ),
+        linear-gradient(
+            315.75deg,
+            rgba(254, 189, 171, 0.74) 30.06%,
+            rgba(243, 169, 248, 0.66) 50.74%,
+            #e0d8f0 80.49%,
+            #eaf7fe 127.9%,
+            #eaf7fe 149.54%
+        ),
+        linear-gradient(
+            315.75deg,
+            rgba(254, 189, 171, 0.74) 30.06%,
+            rgba(243, 169, 248, 0.66) 50.74%,
+            #e0d8f0 80.49%,
+            #eaf7fe 127.9%,
+            #eaf7fe 149.54%
+        );
+    &__container {
+    }
+    &__content {
+    }
+    &__title {
+    }
+    &__text {
+    }
+    &__text_top {
+    }
+    &__text_middle {
+    }
+    &__text_bottom {
+    }
+    &__link {
+    }
+    &__subtitle {
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+    }
+    &__item_card {
+    }
+    &__figure {
+        display: flex;
+        flex-direction: column;
+    }
+    &__description {
+    }
+    &__item_arrow {
+    }
+    &__btn-link {
+    }
+}
+.container {
+}
+.btn-link {
+}
+.btn-link_ellipse {
+}
