@@ -23,58 +23,66 @@
                 >
                 .
             </p>
-            <h3 class="feed__subtitle">How it works</h3>
-            <ul class="feed__list">
-                <li class="feed__item feed__item_card">
-                    <figure class="feed__figure">
-                        <picture
-                            ><source
-                                srcset="./images/pay.webp"
-                                type="image/webp" />
-                            <img src="./images/pay.png" alt="pay"
-                        /></picture>
-                        <figcaption class="feed__description">
+
+            <div class="feed__process process">
+                <h3 class="feed__subtitle">How it works</h3>
+                <div class="feed__steps">
+                    <figure class="feed__step step">
+                        <div class="step__image">
+                            <picture>
+                                <source
+                                    srcset="./images/pay.webp"
+                                    type="image/webp"
+                                />
+                                <img src="./images/pay.png" alt="pay" />
+                            </picture>
+                        </div>
+
+                        <figcaption class="step__description">
                             Pay with card
                         </figcaption>
                     </figure>
-                </li>
-                <li class="feed__item feed__item_arrow">
-                    <img src="./images/icons/arrow.svg" alt="arrow" />
-                </li>
-                <li class="feed__item feed__item_card">
-                    <figure class="feed__figure">
-                        <picture
-                            ><source
-                                srcset="./images/zoo.webp"
-                                type="image/webp" />
-                            <img src="./images/zoo.png" alt="zoo"
-                        /></picture>
-                        <figcaption class="feed__description">
+
+                    <img
+                        class="feed__arrow"
+                        src="./images/feed/arrow1.svg"
+                        alt="arrow"
+                    />
+                    <figure class="feed__step step">
+                        <div class="step__image">
+                            <picture>
+                                <source
+                                    srcset="./images/zoo.webp"
+                                    type="image/webp" />
+                                <img src="./images/zoo.png" alt="zoo"
+                            /></picture>
+                        </div>
+                        <figcaption class="step__description">
                             Payment goes to the zoo
                         </figcaption>
                     </figure>
-                </li>
-                <li class="feed__item feed__item_arrow">
-                    <img src="./images/icons/arrow.svg" alt="arrow" />
-                </li>
-                <li class="feed__item feed__item_card">
-                    <figure class="feed__figure">
-                        <picture
-                            ><source
-                                srcset="./images/monkey.webp"
-                                type="image/webp" />
-                            <img src="./images/monkey.png" alt="monkey"
-                        /></picture>
-                        <figcaption class="feed__description">
+
+                    <img
+                        class="feed__arrow"
+                        src="./images/feed/arrow1.svg"
+                        alt="arrow"
+                    />
+                    <figure class="feed__step step feed__step_mb">
+                        <div class="step__image">
+                            <picture
+                                ><source
+                                    srcset="./images/monkey.webp"
+                                    type="image/webp" />
+                                <img src="./images/monkey.png" alt="monkey"
+                            /></picture>
+                        </div>
+                        <figcaption class="step__description">
                             Your favourite animal gets delicious dish
                         </figcaption>
                     </figure>
-                </li>
-            </ul>
-            <a
-                class="feed__btn-link btn-link btn-link_ellipse"
-                href="../donate/index.html"
-                target="_blank"
+                </div>
+            </div>
+            <a class="btn feed__btn" href="../donate/index.html" target="_blank"
                 >Feed a friend now</a
             >
         </div>
