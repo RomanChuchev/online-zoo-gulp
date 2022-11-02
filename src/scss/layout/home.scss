@@ -158,9 +158,6 @@
         margin-top: 0;
         position: relative;
 
-        &__container {
-            // margin-bottom: 105px;
-        }
         &__content {
             padding-top: 40px;
             margin-right: 1px;
@@ -267,8 +264,7 @@
             margin-bottom: clamp(40px, 12.5vw, 80px);
             margin-left: 0;
         }
-        &__content {
-        }
+
         &__description {
             max-width: 495px;
         }
@@ -931,6 +927,270 @@
 
         &__image {
             margin-bottom: 9px;
+        }
+    }
+}
+
+// Section Testimonials
+
+.testimonials {
+    padding: clamp(100px, 8.75vw, 140px) 0 clamp(140px, 11.25vw, 180px);
+
+    background-image: url(../../images/testimonials/flover-1600.png);
+    background-position: right 126%;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    &__content {
+        overflow: hidden;
+    }
+    &__title {
+        font-size: 36px;
+        line-height: 47px;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    &__slider {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        display: grid;
+        gap: 30px;
+        grid-auto-columns: calc(25% - 22.5px);
+        grid-auto-flow: column;
+        justify-content: start;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: -webkit-transform 0.3s linear;
+        transition: -webkit-transform 0.3s linear;
+        transition: transform 0.3s linear;
+        transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+        padding-bottom: 17px;
+    }
+    &__card {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        background-color: #f1f3f2;
+        border-radius: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-height: 391px;
+        padding: 15px 15px 19px 16px;
+        position: relative;
+
+        ::before {
+            background: linear-gradient(
+                    315.75deg,
+                    hsla(13, 98%, 83%, 0.74) 30.06%,
+                    rgba(243, 169, 248, 0.66) 50.74%,
+                    #e0d8f0 80.49%,
+                    #eaf7fe 127.9%,
+                    #eaf7fe 149.54%
+                ),
+                linear-gradient(
+                    315.75deg,
+                    hsla(13, 98%, 83%, 0.74) 30.06%,
+                    rgba(243, 169, 248, 0.66) 50.74%,
+                    #e0d8f0 80.49%,
+                    #eaf7fe 127.9%,
+                    #eaf7fe 149.54%
+                );
+            border-radius: 20px;
+            content: "";
+            inset: 0;
+            -webkit-mask: -webkit-gradient(
+                        linear,
+                        left top,
+                        left bottom,
+                        color-stop(0, #fff)
+                    )
+                    content-box,
+                -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask: -webkit-gradient(
+                        linear,
+                        left top,
+                        left bottom,
+                        color-stop(0, #fff)
+                    )
+                    content-box,
+                -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+            mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            padding: 2px;
+            position: absolute;
+        }
+    }
+    &__figure {
+        display: flex;
+        margin-bottom: 11px;
+    }
+    &__description {
+        padding-left: 10px;
+    }
+    &__name {
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+    &__info {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #bdbdbd;
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #767474;
+        overflow: hidden;
+    }
+    &__scrollbar-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 28px;
+    }
+    &__scrollbar {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        width: clamp(390px, 37.4375vw, 599px);
+
+        &::before {
+            background: linear-gradient(
+                    315.75deg,
+                    hsla(13, 98%, 83%, 0.74) 30.06%,
+                    rgba(243, 169, 248, 0.66) 50.74%,
+                    #e0d8f0 80.49%,
+                    #eaf7fe 127.9%,
+                    #eaf7fe 149.54%
+                ),
+                linear-gradient(
+                    315.75deg,
+                    hsla(13, 98%, 83%, 0.74) 30.06%,
+                    rgba(243, 169, 248, 0.66) 50.74%,
+                    #e0d8f0 80.49%,
+                    #eaf7fe 127.9%,
+                    #eaf7fe 149.54%
+                );
+            border-radius: 5px;
+            content: "";
+            inset: 0;
+            -webkit-mask: -webkit-gradient(
+                        linear,
+                        left top,
+                        left bottom,
+                        color-stop(0, #fff)
+                    )
+                    content-box,
+                -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask: -webkit-gradient(
+                        linear,
+                        left top,
+                        left bottom,
+                        color-stop(0, #fff)
+                    )
+                    content-box,
+                -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+            mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            padding: 0.6px;
+            position: absolute;
+        }
+    }
+    &__btn {
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    @media (max-width: $tablet) {
+        background-image: url(../../images/testimonials/flover-1000.png);
+        background-position: right 116.7%;
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__slider {
+            grid-auto-columns: calc(33.333% - 20px);
+            padding-bottom: 17px;
+        }
+        &__scrollbar-wrapper {
+            margin-bottom: 44px;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        background-image: url(../../images/testimonials/flover-640.png);
+        background-position: right 114.8%;
+        padding: clamp(30px, 9.531vw, 61px) 0 clamp(60px, 12.5vw, 80px);
+
+        &__title {
+            margin-bottom: clamp(20px, 4.688vw, 30px);
+            font-size: clamp(24px, 5.625vw, 36px);
+            line-height: clamp(29px, 7.344vw, 47px);
+        }
+
+        &__slider {
+            gap: 15px;
+            grid-auto-flow: row;
+            grid-auto-rows: 109px 109px 109px;
+            grid-template-columns: 1fr;
+            padding-bottom: 40px;
+        }
+        &__card {
+            padding: 15px 15px 10px 12px;
+        }
+        &__figure {
+            display: flex;
+            margin-bottom: 11px;
+        }
+        &__text {
+            padding-left: 6px;
+        }
+        &__scrollbar-wrapper {
+            display: none;
+        }
+        &__card_none {
+            display: none;
+        }
+        &__btn {
+            margin: 0 auto;
+            max-width: 240px;
+        }
+    }
+
+    @media (max-width: $mobileSmall) {
+        background-image: url(../../images/testimonials/flover-320.png);
+        background-position: right 106.4%;
+        background-size: auto;
+        &__title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__card {
+            padding: 10px 15px 16px 12px;
+        }
+        &__description {
+            padding-left: 7px;
+        }
+        &__slider {
+            padding-bottom: 28px;
         }
     }
 }
