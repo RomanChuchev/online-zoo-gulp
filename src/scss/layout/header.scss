@@ -1,3 +1,33 @@
+.logo {
+    text-align: center;
+    font-weight: 400;
+    color: $whiteColor;
+    font-size: 19.0145px;
+    line-height: 22.82px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    width: 82px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 7px;
+        left: 9px;
+        width: 12px;
+        height: 20.98px;
+        -webkit-mask-image: url(../images/icons/bamboo.svg);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        background-color: $whiteColor;
+    }
+}
+
 .header {
     background-color: black;
     color: #fff;
@@ -12,6 +42,21 @@
     &__menu {
         flex: 1 1 auto;
     }
+    &__logo {
+        @media (max-width: $mobile) {
+            border: none;
+            font-size: 12.29px;
+            width: 47px;
+            height: 29px;
+            line-height: 15px;
+            &::before {
+                bottom: 3px;
+                left: 4px;
+                height: 13.56px;
+                width: 7px;
+            }
+        }
+    }
 
     @media (max-width: $mobile) {
         padding: 5px 0 1px;
@@ -20,12 +65,6 @@
             min-height: 24px;
         }
     }
-}
-
-.logo {
-    text-align: center;
-    font-weight: 400;
-    color: $whiteColor;
 }
 
 .menu {
@@ -47,32 +86,8 @@
         line-height: math.div(22.4, 18.4);
     }
     &__logo {
-        font-size: 19.0145px;
-        line-height: 22.82px;
-
         margin-right: 4px;
-        border: 1px solid #ffffff;
-        border-radius: 2px;
-        width: 82px;
-        height: 52px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        padding: 0;
 
-        &::before {
-            content: "";
-            position: absolute;
-            bottom: 7px;
-            left: 9px;
-            width: 12px;
-            height: 20.98px;
-            -webkit-mask-image: url(../images/icons/bamboo.svg);
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-size: contain;
-            background-color: $whiteColor;
-        }
         &_visibility {
             display: none;
         }
@@ -80,22 +95,6 @@
 
     &__link_active {
         color: $orangeColor;
-    }
-
-    @media (max-width: $mobile) {
-        &__logo {
-            border: none;
-            font-size: 12.29px;
-            width: 47px;
-            height: 29px;
-            line-height: 15px;
-            &::before {
-                bottom: 3px;
-                left: 4px;
-                height: 13.56px;
-                width: 7px;
-            }
-        }
     }
 }
 
