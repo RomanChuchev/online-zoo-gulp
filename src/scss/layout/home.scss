@@ -327,9 +327,16 @@
     &__content {
         position: relative;
     }
+    &__slider-wripper {
+        overflow: hidden;
+        width: 100%;
+    }
     &__slider {
         padding-bottom: 80px;
-        overflow: clip;
+        display: flex;
+        gap: 30px;
+        position: relative;
+        left: calc(-100% - 30px);
     }
     &__btn {
         border-radius: 25px;
@@ -378,8 +385,37 @@
     }
 }
 
+@keyframes move-right {
+    from {
+        left: calc(-100% - 30px);
+    }
+    to {
+        left: calc(-200% - 60px);
+    }
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 3s;
+}
+
+@keyframes move-left {
+    from {
+        left: calc(-100% - 30px);
+    }
+    to {
+        left: 0%;
+    }
+}
+
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 3s;
+}
+
 .slider {
     &__cards {
+        min-width: 100%;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         display: grid;
