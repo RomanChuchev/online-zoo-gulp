@@ -2,17 +2,56 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    &__item {
-    }
+
     &__link {
         display: flex;
         gap: 12px;
     }
+    &__link img {
+        transition: all 0.3s ease-in-out;
+    }
+
     &__text {
         font-size: 16px;
         line-height: 22px;
         color: #ffffff;
         padding-top: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+    &__item {
+        &:hover {
+            .social__text {
+                color: #e47209;
+            }
+
+            img {
+                overflow: hidden;
+                border-radius: 50%;
+                background: #e47209;
+            }
+        }
+        &:active {
+            .social__text {
+                color: #4b9200;
+            }
+
+            img {
+                overflow: hidden;
+                border-radius: 50%;
+                background: #4b9200;
+            }
+        }
+        &:disabled {
+            .social__text {
+                color: #767474;
+            }
+
+            img {
+                overflow: hidden;
+                border-radius: 50%;
+                background: #767474;
+            }
+        }
     }
 }
 

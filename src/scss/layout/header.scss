@@ -87,6 +87,16 @@
         &_visibility {
             display: none;
         }
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: #e47209;
+        }
+        &:active {
+            color: #4b9200;
+        }
+        &:disabled {
+            color: #767474;
+        }
     }
     &__logo {
         margin-right: 4px;
@@ -98,6 +108,8 @@
 
     &__link_active {
         color: $orangeColor;
+        pointer-events: none;
+        cursor: default;
     }
     &__blur {
         display: none;
