@@ -106,7 +106,7 @@ const pets = [
 
     {
         title: "Alligators",
-        native: "Native to Southeastern United States",
+        native: "Native to Southeastern U. S.",
         description:
             "An alligator is a large reptile in the Crocodilia order in the genus Alligator of the family Alligatoridae. Additionally, several extinct species of alligator are known from fossil remains. Alligators first appeared during the Oligocene epoch about 37 million years ago.",
         images: "./images/pets/alligators-big.png",
@@ -304,6 +304,22 @@ if (window.matchMedia("(max-width: 20.5625em)").matches) {
     console.log("(max-width: 20.5625em)");
 }
 
-const timerId = setInterval(() => {
-    moveRight();
-}, 10000);
+window.addEventListener("load", () => {
+    const screenWidth = getComputedStyle(document.querySelector("head")).width;
+    doSmthIfEqual(screenWidth);
+});
+
+window.addEventListener("resize", () => {
+    const screenWidth = getComputedStyle(document.querySelector("head")).width;
+    doSmthIfEqual(screenWidth);
+});
+
+let timerId;
+function doSmthIfEqual(size) {
+    clearInterval(timerId);
+    if (size <= "410px") {
+        timerId = setInterval(() => {
+            moveRight();
+        }, 5000);
+    }
+}
