@@ -1204,9 +1204,6 @@ body {
     margin-top: -88px;
     padding-bottom: 140px;
   }
-  .pets__slider-wripper {
-    margin-bottom: 64px;
-  }
 }
 @media (max-width: 40.5625em) {
   .no-webp .pets{
@@ -1215,8 +1212,8 @@ body {
     margin-top: -90px;
     padding-bottom: 100px;
   }
-  .pets__slider {
-    padding-bottom: 58px;
+  .pets__slider-wripper {
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 20.5625em) {
@@ -1226,10 +1223,13 @@ body {
     margin-top: -90px;
     background-position: 0 100%, right 100.3%;
     background-size: auto, auto;
-    padding-bottom: 58px;
+    padding-bottom: 60px;
+  }
+  .pets__slider-wripper {
+    margin-bottom: 22px;
   }
   .pets__slider {
-    padding: 0 7px 20px;
+    padding: 0 7px;
     -webkit-column-gap: 45px;
        -moz-column-gap: 45px;
             column-gap: 45px;
@@ -1383,11 +1383,11 @@ body {
     gap: 90px 29px;
   }
   .slider__btn_right {
-    top: calc(50% - 90px);
+    top: calc(50% - 60px);
     right: calc(50% - 76.5px);
   }
   .slider__btn_left {
-    top: calc(50% - 90px);
+    top: calc(50% - 60px);
     left: calc(50% - 76.5px);
   }
 }
@@ -1805,6 +1805,9 @@ body {
   .feed__text_bottom {
     display: none;
   }
+  .feed__process {
+    margin: 0 auto 40px;
+  }
   .feed__steps {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2108,7 +2111,7 @@ body {
     padding-left: 7px;
   }
   .testimonials__slider {
-    padding-bottom: 28px;
+    padding-bottom: 30px;
   }
 }
 .webp .animal{ background-image: url(../images/animal/bg.webp); }
