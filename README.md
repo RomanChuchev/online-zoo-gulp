@@ -1,4 +1,4 @@
-# PetSrory online
+# PetStory online
 
 ## Адаптивная верстка макета из [Figma: PetStory online](https://www.figma.com/file/CmYVAUO8u2ixQSsKfz2k9a/PetStory-online?node-id=0%3A1) с использованием сборки Gulp + WebPack + Babel
 
