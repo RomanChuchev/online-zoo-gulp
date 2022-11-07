@@ -1080,7 +1080,7 @@
         -ms-flex-direction: column;
         flex-direction: column;
         max-height: 391px;
-        padding: 15px 15px 19px 16px;
+        padding: 15px 15px 22px 16px;
         position: relative;
 
         &::before {
@@ -1277,6 +1277,7 @@
         }
         &__card {
             padding: 15px 15px 10px 12px;
+            cursor: pointer;
         }
         &__figure {
             display: flex;
