@@ -81,8 +81,18 @@
     &__label {
         font-size: 24px;
         line-height: 29px;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
         color: white;
+    }
+    &__btn-submit {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px 38px;
+        background: #f1f3f2;
+        color: #000000;
+        border: 1px solid #333b41;
+        border-radius: 5px;
+        height: 42px;
     }
     &__input {
         background-color: transparent;
@@ -96,16 +106,24 @@
             linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
         background-origin: border-box;
         border: 0.7px double transparent;
+        height: 42px;
+        &:invalid:not(:placeholder-shown) {
+            border: 0.7px solid #d31414;
+            color: #d31414;
+            & + .footer__btn-submit {
+                border: 0.7px solid #d31414;
+                color: #d31414;
+            }
+        }
+        &:valid:not(:placeholder-shown) {
+            border-color: #4b9200;
+            & + .footer__btn-submit {
+                color: #4b9200;
+                border: 1px solid #4b9200;
+            }
+        }
     }
-    &__btn-submit {
-        font-size: 16px;
-        line-height: 22px;
-        color: #4b9200;
-        padding: 10px 38px;
-        background: #f1f3f2;
-        border: 1px solid #4b9200;
-        border-radius: 5px;
-    }
+
     &__btn-container {
         padding: 34px 0 46px;
         width: 100%;
@@ -150,7 +168,12 @@
         &__form {
             margin-right: 33px;
         }
-
+        &__btn-container {
+            padding: 36px 0 44px;
+        }
+        &__copyright-link {
+            margin-bottom: 8px;
+        }
         &__list {
             gap: 48px;
         }
