@@ -218,7 +218,7 @@ body {
   color: #ffffff;
   font-size: 19.0145px;
   line-height: 22.82px;
-  border: 1px solid #ffffff;
+  border: 1.5px solid #ffffff;
   border-radius: 2px;
   width: 82px;
   height: 52px;
@@ -248,9 +248,9 @@ body {
 }
 
 .header {
-  background-color: black;
+  background-color: #000000;
   color: #fff;
-  padding: 10px 0;
+  padding: 11px 0 9px;
   z-index: 20;
 }
 .header__container {
@@ -260,7 +260,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
   min-height: 60px;
 }
 .header__menu {
@@ -268,7 +267,19 @@ body {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
+@media (max-width: 63.0625em) {
+  .header {
+    padding: 11px 0;
+    background-color: #111115;
+  }
+}
 @media (max-width: 40.5625em) {
+  .header {
+    padding: 5px 0 1px;
+  }
+  .header__container {
+    min-height: 24px;
+  }
   .header__logo {
     border: none;
     font-size: 12.29px;
@@ -283,12 +294,9 @@ body {
     width: 7px;
   }
 }
-@media (max-width: 40.5625em) {
+@media (max-width: 20.5625em) {
   .header {
-    padding: 5px 0 1px;
-  }
-  .header__container {
-    min-height: 24px;
+    padding: 3px 0 1px;
   }
 }
 
@@ -302,20 +310,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   row-gap: 5px;
-}
-@supports ((-moz-column-gap: clamp( 1.4285714286rem , 0.4126984127rem  +  4.4444444444vw , 4.2857142857rem )) or (column-gap: clamp( 1.4285714286rem , 0.4126984127rem  +  4.4444444444vw , 4.2857142857rem ))) {
-  .menu__list {
-    -webkit-column-gap: clamp( 1.4285714286rem , 0.4126984127rem  +  4.4444444444vw , 4.2857142857rem );
-       -moz-column-gap: clamp( 1.4285714286rem , 0.4126984127rem  +  4.4444444444vw , 4.2857142857rem );
-            column-gap: clamp( 1.4285714286rem , 0.4126984127rem  +  4.4444444444vw , 4.2857142857rem );
-  }
-}
-@supports not ((-moz-column-gap: clamp( 1.4285714286rem , 0.4126984127rem  +  4.4444444444vw , 4.2857142857rem )) or (column-gap: clamp( 1.4285714286rem , 0.4126984127rem  +  4.4444444444vw , 4.2857142857rem ))) {
-  .menu__list {
-    -webkit-column-gap: calc(1.4285714286rem + 2.5 * (100vw - 22.8571428571rem) / 56.25);
-       -moz-column-gap: calc(1.4285714286rem + 2.5 * (100vw - 22.8571428571rem) / 56.25);
-            column-gap: calc(1.4285714286rem + 2.5 * (100vw - 22.8571428571rem) / 56.25);
-  }
+  -webkit-column-gap: 58px;
+     -moz-column-gap: 58px;
+          column-gap: 58px;
 }
 .menu__item {
   text-align: center;
@@ -342,7 +339,7 @@ body {
   color: #767474;
 }
 .menu__logo {
-  margin-right: 4px;
+  margin-right: 5px;
 }
 .menu__logo_visibility {
   display: none;
@@ -354,6 +351,16 @@ body {
 }
 .menu__blur {
   display: none;
+}
+@media (max-width: 63.0625em) {
+  .menu__logo {
+    margin-right: 14px;
+  }
+  .menu__list {
+    -webkit-column-gap: 48px;
+       -moz-column-gap: 48px;
+            column-gap: 48px;
+  }
 }
 
 .visually-hidden {
@@ -568,6 +575,84 @@ body {
     top: 3px;
   }
 }
+.no-webp .donate__bg{
+  background: #283035 url(../images/donate/bg.jpg); }
+.no-webp .donate__bg{
+  background-image: -webkit-image-set(url(../images/donate/bg.webp) type("image/webp"), url(../images/donate/bg.jpg) type("image/jpeg")); }
+.no-webp .donate__bg{
+  background-image: -webkit-image-set(url(../images/donate/bg.webp) type("image/webp"), url(../images/donate/bg.jpg) type("image/jpeg"));
+  background-image: image-set(url(../images/donate/bg.webp) type("image/webp"), url(../images/donate/bg.jpg) type("image/jpeg")); }
+.donate__bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 24.125vw;
+  width: 100%;
+}
+@media (max-width: 63.0625em) {
+  .donate__bg {
+    height: 39vw;
+    background-position: left 29% top 0;
+  }
+}
+.donate__h3_1 {
+  font-size: 36px;
+  line-height: 47px;
+  color: #ffffff;
+}
+.donate__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.donate__h3_2 {
+  font-size: 36px;
+  line-height: 47px;
+  color: #fe9013;
+}
+.donate__title {
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #fe9013;
+}
+.donate__subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  color: #333b41;
+}
+.panda__diet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.panda__multiply-symbol {
+  width: 14px;
+  height: 14px;
+  background: #333b41;
+}
+.panda__illustration {
+  width: 284px;
+  height: 246px;
+}
+
+.diet__quantity {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.diet__label {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #333b41;
+}
+
 .btn {
   height: 54px;
   width: 298px;
@@ -585,7 +670,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   font: inherit;
-  font-weight: 500;
   justify-content: center;
   padding: 16px 0;
   position: relative;
@@ -593,6 +677,9 @@ body {
   text-transform: uppercase;
   z-index: 1;
   overflow: hidden;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
 }
 .btn:before {
   background-color: #e47209;
@@ -699,8 +786,12 @@ body {
   border-radius: 25px;
 }
 @media (max-width: 63.0625em) {
+  .animal {
+    background-size: 120%;
+    min-height: 50.4vw;
+  }
   .animal__container {
-    padding-bottom: 50px;
+    padding-bottom: 47px;
   }
   .animal__content {
     gap: clamp(20px, 4vw, 40.2px);
@@ -712,15 +803,16 @@ body {
     line-height: clamp(41px, 6.4vw, 64px);
   }
   .animal__title ::before {
-    left: -63px;
-    height: clamp(237px, 36vw, 367px);
-    width: clamp(237px, 36vw, 367px);
+    left: -65px;
+    height: clamp(237px, 36.7vw, 367px);
+    width: clamp(237px, 36.7vw, 367px);
   }
 }
 @media (max-width: 40.5625em) {
   .animal {
-    padding-top: 34px;
     margin-top: -34px;
+    min-height: 58.28125vw;
+    padding-top: 34px;
   }
   .animal__container {
     padding-bottom: 40px;
@@ -741,12 +833,13 @@ body {
     line-height: clamp(21px, 6.4vw, 41px);
   }
   .animal__title ::before {
+    bottom: 5px;
     left: -43px;
-    height: clamp(119px, 37vw, 237px);
-    width: clamp(119px, 37vw, 237px);
+    height: clamp(119px, 37.031vw, 237px);
+    width: clamp(119px, 37.031vw, 237px);
   }
   .animal__btn {
-    margin-top: -9px;
+    margin-top: -7px;
     -ms-flex-item-align: start;
         align-self: flex-start;
     width: clamp(100px, 46.5vw, 298px);
@@ -760,7 +853,7 @@ body {
     position: relative;
   }
   .animal__content {
-    padding-top: 40px;
+    padding-top: 42px;
     margin-right: 1px;
   }
   .animal__title {
@@ -771,9 +864,7 @@ body {
   }
   .animal__title ::before {
     left: -19px;
-    bottom: 5px;
-    height: clamp(119px, 37vw, 237px);
-    width: clamp(119px, 37vw, 237px);
+    bottom: 6px;
   }
   .animal__btn {
     position: absolute;
@@ -943,7 +1034,7 @@ body {
   margin-top: -90px;
   background-position: 0 100%, 100% 100%;
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, clamp(241px, 23vw, 368px);
+  background-size: auto, auto;
   padding-bottom: 100px;
 }
 .pets__content {
@@ -2424,6 +2515,9 @@ body {
 .popup__card .testimonials__card {
   padding-bottom: 26px;
 }
+.webp .donate__bg{ background: #283035 url(../images/donate/bg.webp); }
+.webp .donate__bg{ background-image: -webkit-image-set(url(../images/donate/bg.webp) type("image/webp"), url(../images/donate/bg.webp) type("image/jpeg")); }
+.webp .donate__bg{ background-image: -webkit-image-set(url(../images/donate/bg.webp) type("image/webp"), url(../images/donate/bg.webp) type("image/jpeg")); background-image: image-set(url(../images/donate/bg.webp) type("image/webp"), url(../images/donate/bg.webp) type("image/jpeg")); }
 .webp .animal{ background-image: url(../images/animal/bg.webp); }
 .webp .animal{ background-image: -webkit-image-set(url(../images/animal/bg.webp) type("image/webp"), url(../images/animal/bg.webp) type("image/jpeg")); }
 .webp .animal{ background-image: -webkit-image-set(url(../images/animal/bg.webp) type("image/webp"), url(../images/animal/bg.webp) type("image/jpeg")); background-image: image-set(url(../images/animal/bg.webp) type("image/webp"), url(../images/animal/bg.webp) type("image/jpeg")); }
