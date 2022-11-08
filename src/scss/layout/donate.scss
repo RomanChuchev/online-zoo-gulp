@@ -1,0 +1,102 @@
+.donate {
+    &__bg {
+        background: #283035 url(../images/donate/bg.jpg);
+        background-image: -webkit-image-set(
+            url(../images/donate/bg.webp) type("image/webp"),
+            url(../images/donate/bg.jpg) type("image/jpeg")
+        );
+        background-image: image-set(
+            url(../images/donate/bg.webp) type("image/webp"),
+            url(../images/donate/bg.jpg) type("image/jpeg")
+        );
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 24.125vw;
+        width: 100%;
+        @media (max-width: $tablet) {
+            height: 39vw;
+            background-position: left 29% top 0;
+        }
+    }
+
+    &__container {
+    }
+    &__content {
+    }
+    &__h3_1 {
+    }
+    &__description {
+    }
+    &__h3_2 {
+    }
+    &__pick-feed {
+    }
+    &__title {
+    }
+    &__subtitle {
+    }
+    &__panda {
+    }
+    &__progress-bar {
+    }
+    &__form {
+    }
+    &__sharetext {
+    }
+}
+
+.panda {
+    &__diet {
+    }
+    &__multiply-symbol {
+    }
+    &__illustration {
+    }
+}
+.diet {
+    &__quantity {
+    }
+    &__label {
+    }
+}
+.progress-bar {
+    &__textlabel {
+    }
+    &__intervals {
+    }
+    &__amounts {
+    }
+}
+.intervals {
+    &__line {
+    }
+    &__dot {
+    }
+}
+.amount {
+    &__currency {
+    }
+}
+.amount_active {
+}
+.form {
+    &__donation-input {
+    }
+    &__radiobuttons {
+    }
+    &__btn {
+    }
+}
+.donation-input {
+    &__input {
+    }
+    &__currency {
+    }
+}
+.radiobuttons {
+    &__label {
+    }
+    &__button {
+    }
+}

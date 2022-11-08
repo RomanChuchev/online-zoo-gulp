@@ -225,12 +225,14 @@ const ITEM_RIGHT = document.querySelector("#item-right");
 const ITEM_ACTIVE = document.querySelector("#item-active");
 
 (function creatCards() {
-    createRandomCards(ITEM_LEFT);
-    createRandomCards(ITEM_RIGHT);
+    if (ITEM_LEFT) {
+        createRandomCards(ITEM_LEFT);
+        createRandomCards(ITEM_RIGHT);
 
-    for (let i = 0; i < 6; i++) {
-        const card = createFigureTemplate(pets[i]);
-        ITEM_ACTIVE.appendChild(card);
+        for (let i = 0; i < 6; i++) {
+            const card = createFigureTemplate(pets[i]);
+            ITEM_ACTIVE.appendChild(card);
+        }
     }
 })();
 
@@ -248,7 +250,6 @@ const moveRight = () => {
 
 BTN_LEFT.addEventListener("click", moveLeft);
 BTN_RIGHT.addEventListener("click", moveRight);
-
 CAROUSEL.addEventListener("animationend", (animationEvent) => {
     let changedItem;
     if (animationEvent.animationName === "move-left") {

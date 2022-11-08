@@ -26,6 +26,9 @@
     text-transform: uppercase;
     z-index: 1;
     overflow: hidden;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
 
     &:before {
         background-color: #e47209;
@@ -135,8 +138,7 @@
 
     @media (max-width: $tablet) {
         &__container {
-            padding-bottom: 50px;
-            // margin-bottom: clamp(60px, 10vw, 100px);
+            padding-bottom: 47px;
         }
         &__content {
             gap: clamp(20px, 4vw, 40.2px);
@@ -147,9 +149,9 @@
             font-size: clamp(54px, 8.5vw, 85px);
             line-height: clamp(41px, 6.4vw, 64px);
             ::before {
-                left: -63px;
-                height: clamp(237px, 36vw, 367px);
-                width: clamp(237px, 36vw, 367px);
+                left: -65px;
+                height: clamp(237px, 36.7vw, 367px);
+                width: clamp(237px, 36.7vw, 367px);
             }
         }
     }
@@ -158,7 +160,6 @@
         margin-top: -34px;
         &__container {
             padding-bottom: 40px;
-            // margin-bottom: clamp(60px, 9.375vw, 60px);
         }
         &__content {
             max-width: none;
@@ -172,13 +173,14 @@
             font-size: clamp(28px, 8.43vw, 54px);
             line-height: clamp(21px, 6.4vw, 41px);
             ::before {
+                bottom: 5px;
                 left: -43px;
-                height: clamp(119px, 37vw, 237px);
-                width: clamp(119px, 37vw, 237px);
+                height: clamp(119px, 37.031vw, 237px);
+                width: clamp(119px, 37.031vw, 237px);
             }
         }
         &__btn {
-            margin-top: -9px;
+            margin-top: -7px;
             align-self: flex-start;
             width: clamp(100px, 46.5vw, 298px);
         }
@@ -188,9 +190,11 @@
         padding-top: 0;
         margin-top: 0;
         position: relative;
-
+        &__container {
+            padding-bottom: 41px;
+        }
         &__content {
-            padding-top: 40px;
+            padding-top: 42px;
             margin-right: 1px;
         }
         &__title {
@@ -350,7 +354,7 @@
 
     background-position: 0 100%, 100% 100%;
     background-repeat: no-repeat, no-repeat;
-    background-size: auto, clamp(241px, 23vw, 368px);
+    background-size: auto, auto;
     padding-bottom: 100px;
 
     &__content {
@@ -1178,7 +1182,6 @@
             background: orange;
             cursor: pointer;
             width: clamp(40px, 5vw, 80px);
-
             height: 6px;
             -webkit-appearance: none;
             padding: 1px;
