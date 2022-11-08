@@ -1871,13 +1871,13 @@ body {
     margin-bottom: 30px;
   }
   .testimonials__slider-wripper {
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
   .testimonials__slider {
     grid-auto-columns: calc(33.333% - 20px);
   }
   .testimonials__scrollbar-wrapper {
-    margin-bottom: 44px;
+    margin-bottom: 52px;
   }
 }
 @media (max-width: 40.5625em) {
@@ -2049,8 +2049,18 @@ body {
 .footer__label {
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   color: white;
+}
+.footer__btn-submit {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 38px;
+  background: #f1f3f2;
+  color: #000000;
+  border: 1px solid #333b41;
+  border-radius: 5px;
+  height: 42px;
 }
 .footer__input {
   background-color: transparent;
@@ -2064,15 +2074,52 @@ body {
   background-image: linear-gradient(#111115, #111115), linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
   background-origin: border-box;
   border: 0.7px double transparent;
+  height: 42px;
 }
-.footer__btn-submit {
-  font-size: 16px;
-  line-height: 22px;
+.footer__input:invalid:not(:-moz-placeholder-shown) {
+  border: 0.7px solid #d31414;
+  color: #d31414;
+}
+.footer__input:invalid:not(:-ms-input-placeholder) {
+  border: 0.7px solid #d31414;
+  color: #d31414;
+}
+.footer__input:invalid:not(:placeholder-shown) {
+  border: 0.7px solid #d31414;
+  color: #d31414;
+}
+.footer__input:invalid:not(:-moz-placeholder-shown) + .footer__btn-submit {
+  border: 0.7px solid #d31414;
+  color: #d31414;
+}
+.footer__input:invalid:not(:-ms-input-placeholder) + .footer__btn-submit {
+  border: 0.7px solid #d31414;
+  color: #d31414;
+}
+.footer__input:invalid:not(:placeholder-shown) + .footer__btn-submit {
+  border: 0.7px solid #d31414;
+  color: #d31414;
+}
+.footer__input:valid:not(:-moz-placeholder-shown) {
+  border-color: #4b9200;
+}
+.footer__input:valid:not(:-ms-input-placeholder) {
+  border-color: #4b9200;
+}
+.footer__input:valid:not(:placeholder-shown) {
+  border-color: #4b9200;
+}
+.footer__input:valid:not(:-moz-placeholder-shown) + .footer__btn-submit {
   color: #4b9200;
-  padding: 10px 38px;
-  background: #f1f3f2;
   border: 1px solid #4b9200;
-  border-radius: 5px;
+}
+.footer__input:valid:not(:-ms-input-placeholder) + .footer__btn-submit {
+  color: #4b9200;
+  border: 1px solid #4b9200;
+}
+.footer__input:valid:not(:placeholder-shown) + .footer__btn-submit {
+  color: #4b9200;
+  border: 1px solid #4b9200;
 }
 .footer__btn-container {
   padding: 34px 0 46px;
@@ -2111,6 +2158,12 @@ body {
   }
   .footer__form {
     margin-right: 33px;
+  }
+  .footer__btn-container {
+    padding: 36px 0 44px;
+  }
+  .footer__copyright-link {
+    margin-bottom: 8px;
   }
   .footer__list {
     gap: 48px;
