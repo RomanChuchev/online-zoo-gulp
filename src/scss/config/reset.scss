@@ -47,9 +47,14 @@ button,
 textarea {
     font-family: inherit;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
-input::-ms-clear {
-    display: none;
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 button {

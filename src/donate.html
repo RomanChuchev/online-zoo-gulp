@@ -89,7 +89,7 @@
                 </div>
             </header>
 
-            <main class="donate">
+            <main class="donate-page donate">
                 <div class="donate__bg"></div>
                 <section class="donate__pick-friend">
                     <div class="donate__container container">
@@ -152,42 +152,42 @@
                                         <input
                                             class="progress-bar__dot"
                                             type="radio"
-                                            id="v5000"
+                                            id="$5000"
                                             name="amount"
                                             value="5000"
                                         />
                                         <input
                                             class="progress-bar__dot"
                                             type="radio"
-                                            id="v2000"
+                                            id="$2000"
                                             name="amount"
                                             value="2000"
                                         />
                                         <input
                                             class="progress-bar__dot"
                                             type="radio"
-                                            id="v1000"
+                                            id="$1000"
                                             name="amount"
                                             value="1000"
                                         />
                                         <input
                                             class="progress-bar__dot"
                                             type="radio"
-                                            id="v500"
+                                            id="$500"
                                             name="amount"
                                             value="500"
                                         />
                                         <input
                                             class="progress-bar__dot"
                                             type="radio"
-                                            id="v250"
+                                            id="$250"
                                             name="amount"
                                             value="250"
                                         />
                                         <input
                                             class="progress-bar__dot"
                                             type="radio"
-                                            id="v100"
+                                            id="$100"
                                             name="amount"
                                             value="100"
                                             checked="checked"
@@ -195,143 +195,72 @@
                                         <input
                                             class="progress-bar__dot"
                                             type="radio"
-                                            id="v50"
+                                            id="$50"
                                             name="amount"
                                             value="50"
                                         />
                                         <input
                                             class="progress-bar__dot"
                                             type="radio"
-                                            id="v25"
+                                            id="$25"
                                             name="amount"
                                             value="25"
                                         />
                                     </div>
-                                    <div class="progress-bar__amounts">
-                                        <label
-                                            class="progress-bar__amount"
-                                            for="v5000"
-                                            ><span
-                                                class="progress-bar__currency"
-                                                >$</span
-                                            >5000</label
-                                        >
-                                        <label
-                                            class="progress-bar__amount"
-                                            for="v2000"
-                                            ><span
-                                                class="progress-bar__currency"
-                                                >$</span
-                                            >2000</label
-                                        >
-                                        <label
-                                            class="progress-bar__amount"
-                                            for="v1000"
-                                            ><span
-                                                class="progress-bar__currency"
-                                                >$</span
-                                            >1000</label
-                                        >
-                                        <label
-                                            class="progress-bar__amount"
-                                            for="v500"
-                                            ><span
-                                                class="progress-bar__currency"
-                                                >$</span
-                                            >500</label
-                                        >
-                                        <label
-                                            class="progress-bar__amount"
-                                            for="v250"
-                                            ><span
-                                                class="progress-bar__currency"
-                                                >$</span
-                                            >250</label
-                                        >
-                                        <label
-                                            class="progress-bar__amount progress-bar__amount_active"
-                                            for="v100"
-                                            ><span
-                                                class="progress-bar__currency"
-                                                >$</span
-                                            >100</label
-                                        >
-                                        <label
-                                            class="progress-bar__amount"
-                                            for="v50"
-                                            ><span
-                                                class="progress-bar__currency"
-                                                >$</span
-                                            >50</label
-                                        >
-                                        <label
-                                            class="progress-bar__amount"
-                                            for="v25"
-                                            ><span
-                                                class="progress-bar__currency"
-                                                >$</span
-                                            >25</label
-                                        >
-                                    </div>
-                                </div>
-                                <form
-                                    class="donate__form form"
-                                    action="javascript:void(0)"
-                                    method="POST"
-                                >
-                                    <div
-                                        class="form__donation-input donation-input"
+
+                                    <form
+                                        class="donate__form form"
+                                        action="javascript:void(0)"
+                                        method="POST"
                                     >
-                                        <input
-                                            class="donation-input__input"
-                                            list="recommended-amounts"
-                                            type="number"
-                                            min="1"
-                                            max="9999"
-                                            value="100"
-                                            placeholder="Another amount"
-                                        />
-                                        <span class="donation-input__currency"
-                                            >$</span
-                                        ><datalist id="recommended-amounts">
-                                            <option value="5000"></option>
-                                            <option value="2000"></option>
-                                            <option value="1000"></option>
-                                            <option value="500"></option>
-                                            <option value="250"></option>
-                                            <option value="100"></option>
-                                            <option value="50"></option>
-                                            <option value="25"></option>
-                                        </datalist>
-                                    </div>
-                                    <div class="form__radiobuttons">
-                                        <label class="form__label"
-                                            ><input
-                                                class="form__btn-label"
-                                                type="radio"
-                                                id="monthly"
-                                                name="frequency"
-                                            />
-                                            Monthly</label
+                                        <div
+                                            class="form__donation-input donation-input"
                                         >
-                                        <label class="form__label"
-                                            ><input
-                                                class="form__btn-label"
-                                                type="radio"
-                                                id="once"
-                                                name="frequency"
-                                                checked="checked"
+                                            <input
+                                                class="donation-input__input"
+                                                type="number"
+                                                min="1"
+                                                max="9999"
+                                                value="100"
+                                                placeholder="Another amount"
                                             />
-                                            Once</label
+                                            <span
+                                                class="donation-input__currency"
+                                                >$</span
+                                            >
+                                        </div>
+                                        <div class="form__radiobuttons">
+                                            <label class="form__label"
+                                                ><input
+                                                    class="form__btn-label"
+                                                    type="radio"
+                                                    id="monthly"
+                                                    name="frequency"
+                                                />
+                                                Monthly</label
+                                            >
+                                            <label class="form__label"
+                                                ><input
+                                                    class="form__btn-label"
+                                                    type="radio"
+                                                    id="once"
+                                                    name="frequency"
+                                                    checked="checked"
+                                                />
+                                                Once</label
+                                            >
+                                        </div>
+                                        <button
+                                            class="form__btn btn"
+                                            type="submit"
                                         >
-                                    </div>
-                                    <button class="form__btn btn" type="submit">
-                                        feed a friend now
-                                    </button>
-                                </form>
-                                <p class="donate__sharetext">
-                                    Share&nbsp;with&nbsp;your&nbsp;friends&nbsp;on&nbsp;social&nbsp;networks
-                                </p>
+                                            feed a friend now
+                                        </button>
+                                    </form>
+                                    <p class="donate__sharetext">
+                                        Share&nbsp;with&nbsp;your&nbsp;friends&nbsp;on&nbsp;social&nbsp;networks
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -439,19 +368,25 @@
                         <nav class="footer__menu menu">
                             <ul class="menu__list footer__list">
                                 <li class="menu__item">
-                                    <a class="menu__link" href="./index.html"
+                                    <a
+                                        class="menu__link footer__link"
+                                        href="./index.html"
                                         >About</a
                                     >
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link" href="#">Map</a>
+                                    <a class="menu__link footer__link" href="#"
+                                        >Map</a
+                                    >
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link" href="#">Zoos</a>
+                                    <a class="menu__link footer__link" href="#"
+                                        >Zoos</a
+                                    >
                                 </li>
 
                                 <li class="menu__item">
-                                    <a class="menu__link" href="#"
+                                    <a class="menu__link footer__link" href="#"
                                         >Contact&nbsp;us</a
                                     >
                                 </li>

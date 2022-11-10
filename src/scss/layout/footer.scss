@@ -82,7 +82,7 @@
         font-size: 24px;
         line-height: 29px;
         margin-bottom: 14px;
-        color: white;
+        color: #ffffff;
     }
     &__btn-submit {
         font-size: 16px;
@@ -141,6 +141,20 @@
     &__list {
         gap: 58px;
         margin-bottom: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 0;
+        padding: 0;
+        background-color: transparent;
+        height: max-content;
+    }
+    &__link {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
     }
 
     &__copyright-link {
@@ -173,6 +187,7 @@
         }
         &__list {
             gap: 48px;
+            margin-bottom: 1px;
         }
     }
     @media (max-width: $mobile) {
@@ -217,7 +232,7 @@
             @media (max-width: 540px) {
                 gap: 20px;
             }
-            margin-bottom: 3px;
+            margin-bottom: 0px;
         }
         &__copyright {
             width: max-content;

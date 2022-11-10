@@ -136,6 +136,9 @@
         &__progress-bar {
             margin-left: 18px;
         }
+        &__form {
+            margin-right: 18px;
+        }
     }
     @media (max-width: $mobile) {
         &__content {
@@ -174,6 +177,9 @@
         }
         &__progress-bar {
             margin-left: 0px;
+        }
+        &__form {
+            margin-right: 0;
         }
     }
     @media (max-width: $mobileSmall) {
@@ -306,7 +312,7 @@
         display: flex;
         height: 27px;
         justify-content: space-between;
-        margin-bottom: 16px;
+        margin-bottom: 98px;
         padding: 0 30px 0 26px;
         position: relative;
     }
@@ -328,64 +334,61 @@
         height: 10px;
         margin: 0;
         position: relative;
-        -webkit-transition: -webkit-transform 0.3s ease-in-out;
-        transition: -webkit-transform 0.3s ease-in-out;
-        transition: transform 0.3s ease-in-out;
-        transition: transform 0.3s ease-in-out,
-            -webkit-transform 0.3s ease-in-out;
         width: 10px;
         z-index: 1;
-        &:checked:before {
-            border: 2px solid #fe9013;
-            border-radius: 50%;
+
+        &:before {
             content: "";
-            height: 20px;
             left: 50%;
             position: absolute;
             top: 50%;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-            width: 20px;
+            background-image: url(../images/donate/roller_icon.svg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            z-index: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 0%;
+            transition: all 0.3s ease-in-out;
+        }
+        &:checked:before {
+            background-size: 80%;
+            transition: all 0.3s ease-in-out;
+        }
+        &:after {
+            content: attr(id);
+            position: relative;
+            bottom: -30px;
+            right: clamp(12px, 1.875vw, 30px);
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #333b41;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        &:checked:after {
+            filter: invert(54%) sepia(71%) saturate(590%) hue-rotate(349deg)
+                brightness(101%) contrast(99%);
         }
 
-        &:checked:after {
-            border: 2px solid #fe9013;
-            border-radius: 50%;
-            content: "";
-            height: 36px;
-            left: 50%;
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            width: 36px;
+        &:hover {
+            &:before {
+                background-size: 40%;
+            }
+            &:checked:before {
+                background-size: 90%;
+            }
         }
-    }
-    &__amounts {
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        gap: 58px;
-        justify-content: flex-start;
-        margin-bottom: 54px;
-    }
-    &__amount {
-        cursor: pointer;
-        font-size: 26px;
-        font-weight: 500;
-        min-width: 72px;
-    }
-    &__amount_active {
-        color: #fe9013;
-        span {
-            color: #fe9013;
-        }
-    }
-    &__currency {
-        font-size: 22px;
-        font-weight: 700;
     }
 
     @media (max-width: $tablet) {
@@ -404,25 +407,13 @@
             &:first-of-type {
                 display: none;
             }
-        }
-        &__amounts {
-            -webkit-box-pack: start;
-            -ms-flex-pack: start;
-            gap: clamp(37px, 5.8vw, 58px);
-            justify-content: flex-start;
-        }
-        &__amount:first-child {
-            display: none;
+            &:after {
+                bottom: -30px;
+                right: 13px;
+            }
         }
     }
-    @media (max-width: 990px) {
-        &__amounts {
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            gap: normal;
-            justify-content: space-between;
-        }
-    }
+
     @media (max-width: $mobile) {
         &__textlabel {
             padding-left: 10px;
@@ -437,42 +428,22 @@
             &:nth-of-type(3) {
                 display: none;
             }
+            &:checked:before {
+                background-size: 80%;
+            }
+
+            &:after {
+                bottom: -31px;
+                right: 20px;
+                font-size: clamp(13px, 4.063vw, 26px);
+            }
         }
         &__line {
             left: 34px;
             width: calc(100% - 69px);
         }
+    }
 
-        &__amounts {
-            -webkit-box-pack: start;
-            -ms-flex-pack: start;
-            justify-content: flex-start;
-            padding: 0 16px;
-            margin-bottom: 56px;
-            gap: 58px;
-        }
-        &__amount {
-            font-size: clamp(13px, 4.0625vw, 26px);
-            &:nth-child(2),
-            &:nth-child(3) {
-                display: none;
-            }
-        }
-        &__currency {
-            font-size: clamp(13px, 3.4375vw, 22px);
-        }
-    }
-    @media (max-width: 620px) {
-        &__amounts {
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            gap: normal;
-            justify-content: space-between;
-        }
-        &__amount {
-            text-align: center;
-        }
-    }
     @media (max-width: $mobileSmall) {
         &__textlabel {
             padding-left: 0;
@@ -480,42 +451,26 @@
         }
         &__intervals {
             height: 13.5px;
-            margin-bottom: 8px;
+            margin-bottom: 50px;
             padding: 0 18px 0 17.5px;
         }
         &__dot {
             height: 4px;
             width: 4px;
-            &::before {
-                height: 18px;
-                width: 18px;
+            &:checked:before {
+                background-size: 40%;
             }
-            &:checked:after {
-                border-width: 1px;
-                height: 18px;
-                width: 18px;
+
+            &:after {
+                bottom: -11px;
+                right: 11px;
+                font-size: 13px;
             }
         }
         &__line {
             height: 1px;
             left: 17.5px;
             width: calc(100% - 35.5px);
-        }
-
-        &__amounts {
-            -webkit-box-pack: start;
-            -ms-flex-pack: start;
-            gap: 37px;
-            justify-content: flex-start;
-            padding-left: 7px;
-            margin-bottom: 28px;
-        }
-        &__amount {
-            min-width: 28px;
-            text-align: start;
-        }
-        &__currency {
-            font-size: clamp(11px, 3.438vw, 22px);
         }
     }
 }
@@ -611,7 +566,7 @@
     }
     @media (max-width: $mobileSmall) {
         &__donation-input {
-            margin-bottom: 25px;
+            margin-bottom: 24px;
         }
         &__radiobuttons {
             margin-bottom: 28px;
@@ -624,14 +579,27 @@
     width: -moz-min-content;
     width: min-content;
     &__input {
-        -webkit-appearance: textfield;
-        -moz-appearance: textfield;
-        appearance: textfield;
         background-color: transparent;
         border-radius: 2px;
         outline: none;
         padding: 16px 9px;
         width: 268px;
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+        &:valid {
+            border: 1px solid #4b9200;
+            color: #4b9200;
+            & + .donation-input__currency {
+                color: #4b9200;
+            }
+        }
+        &:placeholder-shown {
+            border: 1px solid #929699;
+            & + .donation-input__currency {
+                color: #929699;
+            }
+        }
     }
 
     &__currency {
@@ -643,11 +611,10 @@
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
     }
-    &__input:valid {
-        border: 1px solid #4b9200;
-        color: #4b9200;
-        & + .donation-input__currency {
-            color: #4b9200;
+
+    @media (max-width: $tablet) {
+        &__input {
+            padding: 15px 9px;
         }
     }
     @media (max-width: $mobile) {
