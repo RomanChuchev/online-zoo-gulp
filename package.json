@@ -1,7 +1,8 @@
 {
-  "name": "gulp-2022",
+  "name": "online-zoo-gulp",
+  "homepage": "https://romanchuchev.github.io/online-zoo-gulp/",
   "version": "1.0.0",
-  "description": "Сборка Gulp-2022 по каналу 'Фрилансер по жизни'",
+  "description": "Верстка макета из figma, используя сборку Gulp",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -15,9 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StarkElessar/gulp-2022.git"
+    "url": "git+https://github.com/RomanChuchev/online-zoo-gulp"
   },
   "keywords": [
+    "online-zoo",
+    "petstore",
     "gulp",
     "webpack",
     "js",
@@ -25,12 +28,8 @@
     "scss",
     "html"
   ],
-  "author": "FLS",
+  "author": "RomanChuchev",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/StarkElessar/gulp-2022/issues"
-  },
-  "homepage": "https://github.com/StarkElessar/gulp-2022#readme",
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/polyfill": "^7.12.1",
