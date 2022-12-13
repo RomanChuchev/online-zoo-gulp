@@ -6,6 +6,8 @@
   &__link {
     display: flex;
     gap: 12px;
+    padding: 5px;
+    margin: -5px;
   }
   &__link img {
     overflow: hidden;
@@ -133,6 +135,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+    padding: 10px;
   }
   &__social {
     padding-right: 118px;

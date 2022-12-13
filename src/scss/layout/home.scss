@@ -492,6 +492,10 @@
     transform: translateY(-50%);
     right: -82px;
     top: calc(50% - 70px);
+    img {
+      width: 18px;
+      height: 10px;
+    }
   }
 
   &__btn_left {
@@ -505,6 +509,10 @@
     transform: translateY(-50%);
     left: -82px;
     top: calc(50% - 70px);
+    img {
+      width: 18px;
+      height: 10px;
+    }
   }
 
   @media (max-width: $tablet) {
@@ -602,6 +610,16 @@
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+
+    img.banana {
+      width: 33px;
+      height: 37px;
+    }
+
+    img.meet {
+      width: 48px;
+      height: 38px;
+    }
   }
   &__title {
     font-size: 16px;
@@ -751,12 +769,17 @@
   &__text_middle {
     font-weight: 500;
     margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 130%;
+
     max-width: none;
     width: max-content;
   }
   &__text_bottom {
     margin: 0 0 clamp(40px, 3.75vw, 60px);
     max-width: 863px;
+    font-size: 16px;
+    line-height: 130%;
   }
   &__link {
     border-bottom: 1px solid #fe9013;
