@@ -1829,6 +1829,10 @@ body {
   right: -82px;
   top: calc(50% - 70px);
 }
+.slider__btn_right img {
+  width: 18px;
+  height: 10px;
+}
 .slider__btn_left {
   width: 62px;
   height: 62px;
@@ -1844,6 +1848,10 @@ body {
           transform: translateY(-50%);
   left: -82px;
   top: calc(50% - 70px);
+}
+.slider__btn_left img {
+  width: 18px;
+  height: 10px;
 }
 @media (max-width: 63.0625em) {
   .slider__cards {
@@ -1947,6 +1955,14 @@ body {
   -o-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.card__info img.banana {
+  width: 33px;
+  height: 37px;
+}
+.card__info img.meet {
+  width: 48px;
+  height: 38px;
 }
 .card__title {
   font-size: 16px;
@@ -2084,6 +2100,8 @@ body {
 .feed__text_middle {
   font-weight: 500;
   margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 130%;
   max-width: none;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -2092,6 +2110,8 @@ body {
 .feed__text_bottom {
   margin: 0 0 clamp(40px, 3.75vw, 60px);
   max-width: 863px;
+  font-size: 16px;
+  line-height: 130%;
 }
 .feed__link {
   border-bottom: 1px solid #fe9013;
@@ -2678,6 +2698,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 12px;
+  padding: 5px;
+  margin: -5px;
 }
 .social__link img {
   overflow: hidden;
@@ -2833,6 +2855,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  padding: 10px;
 }
 .footer__social {
   padding-right: 118px;
